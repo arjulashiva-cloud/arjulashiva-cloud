@@ -5,81 +5,65 @@
 </p>
 
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Roboto&size=21&pause=2000&color=4F94EF&center=true&vCenter=true&width=800&lines=Banking+Analytics+%7C+STTM+%7C+Data+Migration+%7C+KPI+Governance;10+years+of+financial+services+analytics+at+Capital+One;Snowflake+%7C+dbt+%7C+Power+BI+%7C+Tableau+%7C+QuickSight;AI-forward+practitioner+%7C+Claude+%7C+Monte+Carlo+%7C+ETL%2FELT" alt="Typing SVG" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/shivakrishnaarjula">
-    <img src="https://img.shields.io/badge/LINKEDIN-Shiva%20Krishna%20Arjula-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="mailto:arjulashiva@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-arjulashiva%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/arjulashiva-cloud">
-    <img src="https://img.shields.io/badge/GITHUB-arjulashiva--cloud-181717?style=flat-square&logo=github&logoColor=white" />
-  </a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Senior+Data+Analyst+%2F+SME;10+Years+Banking+%26+Financial+Services;Snowflake+%7C+dbt+%7C+PySpark+%7C+Power+BI;Analytics+Engineering+%7C+Data+Migration" alt="Typing SVG" /></a>
 </p>
 
 ---
 
 ## 💁 About Me
 
-I'm a **Senior Data Analyst and Subject Matter Expert with 10 years of progressive banking and financial services analytics experience** — specializing in source-to-target mapping (STTM), data migration, reconciliation, enterprise KPI governance, and advanced analytics across Snowflake, Databricks, dbt, AWS, and Python.
+I'm a Senior Data Analyst and Subject Matter Expert with **10 years of progressive banking and financial services analytics experience** — specializing in source-to-target mapping (STTM), data migration, reconciliation, enterprise KPI governance, and advanced analytics across Snowflake, Databricks, dbt, AWS, and Python.
 
 - 🏦 **Senior Data Analyst / SME at Capital One** — banking domain STTM, Discover acquisition data migration, and enterprise KPI governance
-- 📊 Led **Discover acquisition migration tracking dashboard** — adopted as source of truth across engineering, finance, and operations
-- ⚡ Reduced manual effort by **30–50%**, saving **100+ analyst hours/month** through Python and AI-automated workflows
-- 🤖 AI-forward practitioner — actively leverages **Claude AI** in daily workflows for dbt model development, pipeline automation, documentation, and quality checks with human-in-the-loop validation
+- 📊 **Led Discover acquisition migration tracking dashboard** — adopted as source of truth across engineering, finance, and operations
+- ⚡ **Reduced manual effort by 30–50%**, saving 100+ analyst hours/month through Python and AI-automated workflows
+- 🤖 **AI-forward practitioner** — actively leverages Claude AI in daily workflows for dbt model development, pipeline automation, documentation, and quality checks with human-in-the-loop validation
 - 🎓 **Pittsburg State University** — Master of Science, Information Technology · GPA 3.7
 
 ---
 
 ## ⚙️ Featured Analytics Portfolio Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### ⚡ Colorado Utilities & Energy Operations Analytics
+**Python · Snowflake · dbt · PySpark · NetworkX · Power BI · EIA API · Open-Meteo API**
 
-**Python · Snowflake · dbt · Power BI · EIA API**
+Production-grade end-to-end data engineering pipeline for Colorado electric utilities — pulling **real data from live APIs**, running **advanced graph and distributed analytics**, transforming with **dbt**, and visualizing through **6 fully-built Power BI dashboards** with custom DAX measures and AI-powered analytics.
 
-End-to-end analytics engineering pipeline modeling grid operations, energy demand, and weather correlations for Colorado energy companies — Xcel Energy and Lumen Technologies.
+**Pipeline highlights:**
+- 🌐 **4 live API sources** — EIA Open Data v2 (grid demand, 509 real generators, 7,344 rows retail sales) + Open-Meteo weather (330 rows real daily weather for 5 Colorado cities)
+- 🔗 **NetworkX graph analytics** — modeled the Colorado power grid as a 15-node / 17-edge network; calculated betweenness centrality, degree centrality, and ran failure simulations to find which substations are most critical
+- ⚡ **PySpark distributed compute** — city-level aggregations, `rank().over(Window.orderBy())` window functions, seasonal breakdown, and grid criticality join across all 5 cities — results written back to Snowflake
+- 📐 **dbt mart layer** — 9 staging models + 10 business marts with complex SQL joins, weather-correlated risk scoring, and operational stress composite metrics
+- 📊 **6 Power BI dashboards** built on Snowflake marts via DirectQuery — custom DAX measures, calculated columns, cross-filtering, and Power BI AI Key Influencers visual
 
-**Pipeline highlights**
-- EIA Open Data API ingestion → Snowflake staging → dbt mart layer
-- `mart_eia_weather` — demand vs. temperature correlation
-- `mart_generator_mix` — 21,607 MW capacity, 51.1% clean energy
-- `mart_weather_operations` — city-level risk scoring
-- Power BI dashboard: Grid Overview, Demand vs Weather, City Operations, Grid Criticality
+**Dashboards built:**
+
+| Dashboard | Key Visuals |
+|---|---|
+| Grid Overview | KPI cards · Bar by city · Risk label donut |
+| Operational Stress | Stress score KPIs · Area chart by weather type · Risk distribution |
+| Outage Analytics | CML trending · Outage type breakdown · 🤖 AI Key Influencers |
+| O&M Spend Analysis | Spend by asset type · Cost category donut · 🤖 AI Key Influencers |
+| Workforce & Safety | Labor/overtime KPIs · Ribbon chart by crew type · Safety metrics |
+| EIA Market Intelligence | Revenue · Sales MWh · Price/kWh · Sector breakdown |
 
 [View repository →](https://github.com/arjulashiva-cloud/utilities_operations_dbt)
 
-</td>
-<td width="50%" valign="top">
+---
 
 ### 💰 Financial Services Analytics — dbt + Snowflake
-
 **Python · Snowflake · dbt · Power BI · SQL**
 
 Production-grade analytics engineering portfolio for banking and financial services — Customer 360, portfolio performance tracking, and KPI governance modeled end-to-end in dbt on Snowflake.
 
-**Analytics highlights**
+**Analytics highlights:**
 - Customer 360 segmentation with certified metric definitions
 - Portfolio performance tracking with MoM / YoY trends
 - KPI governance framework — resolving measurement inconsistencies across business lines
 - dbt staging, intermediate, and mart layers with schema tests and lineage docs
 - SOX-ready reconciliation and data quality validation patterns
 
-[View repository →](https://github.com/arjulashiva-cloud/financial_analytics_dbt)
-
-</td>
-</tr>
-</table>
+[View repository →](https://github.com/arjulashiva-cloud)
 
 ---
 
@@ -89,9 +73,9 @@ Production-grade analytics engineering portfolio for banking and financial servi
 
 - Served as banking domain SME — frequently consulted by peers and senior leadership on complex data challenges, Snowflake architecture decisions, and data quality strategy
 - Led STTM, data migration, and reconciliation work for Capital One's Discover acquisition — owned cross-system data mapping, validation frameworks, and migration tracking dashboard
-- Built **Customer 360 analytics framework and KPI governance standards** — designed KPI formulas, certified metric definitions, and delivered executive dashboards in Power BI, Tableau, and QuickSight
-- Delivered **SOX audit analytics** — automated controls testing frameworks, reconciliation tie-outs, and evidence extraction pipelines supporting Internal Audit and regulatory reporting
-- Built and maintained **dbt transformation pipelines on Snowflake** — modular staging, intermediate, and mart layer models with schema tests, lineage docs, and automated quality checks
+- Built Customer 360 analytics framework and KPI governance standards — designed KPI formulas, certified metric definitions, and delivered executive dashboards in Power BI, Tableau, and QuickSight
+- Delivered SOX audit analytics — automated controls testing frameworks, reconciliation tie-outs, and evidence extraction pipelines supporting Internal Audit and regulatory reporting
+- Built and maintained dbt transformation pipelines on Snowflake — modular staging, intermediate, and mart layer models with schema tests, lineage docs, and automated quality checks
 
 **Genpact (Capital One) &nbsp;·&nbsp; Assistant Data Analysis Manager — Banking Analytics, STTM & KPI Governance** &nbsp;&nbsp;&nbsp;*(Feb 2020 – Jun 2023)*
 
@@ -113,57 +97,37 @@ Production-grade analytics engineering portfolio for banking and financial servi
 
 ## 🧰 Technical Toolkit
 
-<p align="center"><strong>SQL & Data Engineering</strong></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SNOWFLAKE-29B5E8?style=flat-square&logo=snowflake&logoColor=white" />
-  <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" />
-  <img src="https://img.shields.io/badge/DATABRICKS-FF3621?style=flat-square&logo=databricks&logoColor=white" />
-  <img src="https://img.shields.io/badge/PANDAS-150458?style=flat-square&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/PYSPARK-E25A1C?style=flat-square&logo=apache-spark&logoColor=white" />
-</p>
+**SQL & Data Engineering**
 
-<p align="center"><strong>BI & Visualization</strong></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/POWER%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/TABLEAU-E97627?style=flat-square&logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/AMAZON%20QUICKSIGHT-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/LOOKER-4285F4?style=flat-square&logo=looker&logoColor=white" />
-  <img src="https://img.shields.io/badge/EXCEL-217346?style=flat-square&logo=microsoft-excel&logoColor=white" />
-</p>
+![SQL](https://img.shields.io/badge/SQL-Advanced-blue) ![Python](https://img.shields.io/badge/Python-3.x-blue) ![dbt](https://img.shields.io/badge/dbt-Snowflake-orange) ![PySpark](https://img.shields.io/badge/PySpark-Distributed-red) ![Snowflake](https://img.shields.io/badge/Snowflake-DW-29B5E8)
 
-<p align="center"><strong>Cloud & Platforms</strong></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/AZURE%20DEVOPS-0078D7?style=flat-square&logo=azure-devops&logoColor=white" />
-  <img src="https://img.shields.io/badge/GITHUB-181717?style=flat-square&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/JIRA-0052CC?style=flat-square&logo=jira&logoColor=white" />
-  <img src="https://img.shields.io/badge/CONFLUENCE-172B4D?style=flat-square&logo=confluence&logoColor=white" />
-</p>
+**BI & Visualization**
 
-<p align="center"><strong>Banking Analytics & Governance</strong></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/STTM-1E3A5F?style=flat-square&logoColor=white" />
-  <img src="https://img.shields.io/badge/KPI%20GOVERNANCE-0F766E?style=flat-square&logoColor=white" />
-  <img src="https://img.shields.io/badge/SOX%20AUDIT%20ANALYTICS-7C3AED?style=flat-square&logoColor=white" />
-  <img src="https://img.shields.io/badge/MONTE%20CARLO-1E3A5F?style=flat-square&logoColor=white" />
-  <img src="https://img.shields.io/badge/CLAUDE%20AI-D97757?style=flat-square&logoColor=white" />
-</p>
+![Power BI](https://img.shields.io/badge/Power%20BI-DAX%20%7C%20DirectQuery-yellow) ![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue) ![QuickSight](https://img.shields.io/badge/AWS-QuickSight-orange)
+
+**Cloud & Platforms**
+
+![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20Glue%20%7C%20Redshift-orange) ![Azure](https://img.shields.io/badge/Azure-DevOps%20%7C%20ADF-blue) ![Databricks](https://img.shields.io/badge/Databricks-Spark-red)
+
+**Analytics & Libraries**
+
+![NetworkX](https://img.shields.io/badge/NetworkX-Graph%20Analytics-green) ![NumPy](https://img.shields.io/badge/NumPy-Statistical%20Simulation-blue) ![Pandas](https://img.shields.io/badge/Pandas-Data%20Engineering-150458)
+
+**Banking Analytics & Governance**
+
+STTM · Data Migration · KPI Governance · SOX Audit Analytics · Reconciliation · Customer 360
 
 ---
 
 ## 🎓 Education
 
-**Pittsburg State University** — Pittsburg, KS
-Master of Science, Information Technology · **GPA 3.7** · 2016
+**Pittsburg State University** — Pittsburg, KS &nbsp;·&nbsp; Master of Science, Information Technology · GPA 3.7 · 2016
 
-**Kakatiya University** — India
-Bachelor of Technology, Mechanical Engineering
+**Kakatiya University** — India &nbsp;·&nbsp; Bachelor of Technology, Mechanical Engineering
 
 ---
 
 ## 📜 Certifications
 
-- Microsoft Power BI Data Analyst **PL-300** *(In Progress – 2026)*
-- Snowflake **SnowPro Core** *(In Progress – 2026)*
+- Microsoft Power BI Data Analyst PL-300 *(In Progress – 2026)*
+- Snowflake SnowPro Core *(In Progress – 2026)*
