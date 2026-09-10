@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Senior+Data+Analyst+%2F+SME;10+Years+Banking+%26+Financial+Services;Snowflake+%7C+dbt+%7C+PySpark+%7C+Power+BI;Analytics+Engineering+%7C+Data+Migration" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Senior+Data+Analyst+/+Analytics Engineer+%2F+SME;10+Years+Banking+%26+Financial+Services;Snowflake+%7C+dbt+%7C+PySpark+%7C+Power+BI;Analytics+Engineering+%7C+Data+Migration" alt="Typing SVG" /></a>
 </p>
 
 ---
