@@ -51,19 +51,33 @@ Production-grade end-to-end data engineering pipeline for Colorado electric util
 
 ---
 
-### 💰 Financial Services Analytics — dbt + Snowflake
-**Python · Snowflake · dbt · Power BI · SQL**
+### 🏦 Banking Analytics Platform — dbt + Snowflake + Power BI
+**Python · Snowflake · dbt Core · Power BI · FRED API · FDIC BankFind Suite · SQL**
 
-Production-grade analytics engineering portfolio for banking and financial services — Customer 360, portfolio performance tracking, and KPI governance modeled end-to-end in dbt on Snowflake.
+Production-grade banking analytics platform covering CECL reserves, peer benchmarking, macro risk overlay, SOX controls, and deposit stability — built end-to-end on dbt + Snowflake with a 7-page Power BI dashboard.
 
-**Analytics highlights:**
-- Customer 360 segmentation with certified metric definitions
-- Portfolio performance tracking with MoM / YoY trends
-- KPI governance framework — resolving measurement inconsistencies across business lines
-- dbt staging, intermediate, and mart layers with schema tests and lineage docs
-- SOX-ready reconciliation and data quality validation patterns
+**Pipeline highlights:**
+- 🌐 **Real external data** — FRED API (Fed Funds rate, CPI, yield curve 2019–2026) + FDIC BankFind Suite (20 peer banks $1B–$10B assets) for authentic macro and competitive benchmarking
+- 🏦 **CECL reserve engine** — PD × LGD × EAD × macro multiplier across Base (1.00×), Adverse (1.20×), and Severely Adverse (1.50×) scenarios; ~$22M base → ~$35M severe
+- 📊 **Peer benchmarking at quartile level** — NIM at TOP_QUARTILE (6.08% vs 3.4% peer median), charge-off at BEST_QUARTILE (0.01% vs 0.315% peer median), LDR positioning vs 20 FDIC peers
+- 📉 **Macro risk overlay** — Fed Funds rate cycle, yield curve inversion detection, CPI trend, ECL scenario selection driven by macro environment
+- 🔒 **SOX controls automation** — exception tracking, audit evidence packaging, compliance conduct monitoring with CFPB complaint analytics
+- 🏗 **18 dbt models** across Staging → Intermediate → Marts layers (MARTS_CORE, MARTS_FINANCE, MARTS_RISK, MARTS_EXECUTIVE) with 90+ tests, all passing
+- ⚙️ **GitHub Actions CI/CD** — `dbt build` runs on every push to main
 
-[View repository →](https://github.com/arjulashiva-cloud)
+**Dashboards built (7 pages):**
+
+| Dashboard | Key Analytics |
+|---|---|
+| Executive Summary | NIM · Total deposits · Active loans · Portfolio health score · YoY trends |
+| Customer Overview | 50K customer segmentation · Churn risk · Credit tier · Lifecycle stage |
+| Portfolio Performance | Loan breakdown by product · Delinquency rates · Charge-off trends · LTV |
+| CECL Reserve Analysis | Base / Adverse / Severely Adverse scenarios · Coverage ratios · $2.4B exposure |
+| Compliance & Conduct | CFPB complaint volume · Severity · Timely response rate · Product category |
+| Peer Benchmarking | NIM / Charge-off / LDR quartile vs 20 FDIC peer banks |
+| Macro Risk Overlay | Fed Funds cycle · Yield curve spread · CPI YoY % · ECL stress scenarios |
+
+[View repository →](https://github.com/arjulashiva-cloud/financial_analytics_dbt)
 
 ---
 
@@ -83,7 +97,7 @@ Production-grade analytics engineering portfolio for banking and financial servi
 - Built Customer 360 reporting views and KPI governance standards — established certified metric definitions and dimensional data models, resolving persistent KPI discrepancies across banking business lines
 - Mentored junior analysts and established STTM templates, data modeling standards, and documentation frameworks
 
-**Collabera Technologies &nbsp;·&nbsp; Data Analyst** &nbsp;&nbsp;&nbsp;*(Dec 2018 – Jan 2020)*
+**Collabera Technologies (Capital One) &nbsp;·&nbsp; Data Analyst** &nbsp;&nbsp;&nbsp;*(Dec 2018 – Jan 2020)*
 
 - Supported banking domain data warehouse analytics — SQL-based data analysis, STTM documentation, and data reconciliation across Teradata, Redshift, Oracle, and SQL Server
 - Built Tableau and Power BI dashboards for retail banking stakeholders; automated recurring reporting workflows using Python
